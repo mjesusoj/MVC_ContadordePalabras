@@ -20,7 +20,7 @@ public class Controlador implements ActionListener, WindowListener {
 			try {
 				objVista.txt.selectAll();
 				String texto = this.objVista.txt.getText();
-				String resultado = objModelo.contar_palabras(texto);
+				int resultado = objModelo.contar_palabras(texto);
 				objVista.lblResultado.setText("Hay" + "" + resultado + "" + "palabras");
 			} catch(Exception e) {
 				e.printStackTrace(); 
